@@ -8,6 +8,9 @@ using System.Web;
 using System.Web.Mvc;
 using QLKhachSan.Models;
 
+
+
+
 namespace QLKhachSan.Controllers
 {
     public class AccountsController : Controller
