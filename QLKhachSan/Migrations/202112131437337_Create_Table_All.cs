@@ -8,6 +8,15 @@
         public override void Up()
         {
             CreateTable(
+                "dbo.Accounts",
+                c => new
+                    {
+                        Username = c.String(nullable: false, maxLength: 128),
+                        Password = c.String(nullable: false),
+                    })
+                .PrimaryKey(t => t.Username);
+            
+            CreateTable(
                 "dbo.DichVu",
                 c => new
                     {
@@ -71,6 +80,7 @@
             DropTable("dbo.KhachHang");
             DropTable("dbo.HoaDon");
             DropTable("dbo.DichVu");
+            DropTable("dbo.Accounts");
         }
     }
 }

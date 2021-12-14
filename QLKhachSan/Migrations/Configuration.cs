@@ -10,7 +10,6 @@
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "QLKhachSan.Models.QLKSDbContext";
         }
 
         protected override void Seed(QLKhachSan.Models.QLKSDbContext context)
